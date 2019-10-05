@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_tomorrow">Tomorrow</string>
+    <string name="title_future_forecast">Future Forecast</string>
+    <string name="tbltxtwinndvalue">
+        11NW
+        km/h
+    </string>
+</resources>

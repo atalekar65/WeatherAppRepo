@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_background"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradientnavcolor"
+        app:menu="@menu/navigation"
+        tools:layout_editor_absoluteY="455dp" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Andheri,Mumbai"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="1dp" />
+
+    <TextView
+        android:id="@+id/timeupdated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Updated on Sat, 5 Oct, 12:55 PM"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="35dp" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="368dp"
+        android:layout_height="130dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="64dp">
+
+        <TextView
+            android:id="@+id/degree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="25dp"
+            android:text="32"
+            android:textColor="#FFD700"
+            android:textSize="45dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/wethericon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/ic_iconcloudysun" />
+
+        <ImageView
+            android:id="@+id/celsius"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="35dp"
+            app:srcCompat="@drawable/ic_iconcelsius" />
+
+    </FrameLayout>
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="368dp"
+        android:layout_height="130dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="202dp"
+        android:stretchColumns="1,2,3,4">
+
+
+        <TableRow>
+            <TextView
+                android:id="@+id/tbltxtwind"
+                android:text="wind"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1" />
+
+            <TextView
+                android:id="@+id/tbltxthumidity"
+                android:text="Humidity"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2" />
+
+            <TextView
+                android:id="@+id/tbltxtvisibility"
+                android:text="Visibility"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3" />
+
+            <TextView
+                android:id="@+id/tbltxtsunrise"
+                android:text="SunRise"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="4" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/tbltxtwindval"
+                android:text="11 NW
+kmh/h"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1" />
+
+            <TextView
+                android:id="@+id/tbltxthumidityval"
+                android:text="79 %"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2" />
+
+            <TextView
+                android:id="@+id/tbltxtvisibilityval"
+                android:text="4 km"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3" />
+
+            <TextView
+                android:id="@+id/tbltxtsunriseval"
+                android:text="6:29AM"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="4" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/tbltxtwindgust"
+                android:text="Wind Gust"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1" />
+
+            <TextView
+                android:id="@+id/tbltxtpressure"
+                android:text="Pressure"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2" />
+
+            <TextView
+                android:id="@+id/tbltxtceiling"
+                android:text="Ceiling"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3" />
+
+            <TextView
+                android:id="@+id/tbltxtsunset"
+                android:text="SunSet"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="4" />
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tbltxtwindgustval"
+                android:text="42 km/h"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1" />
+
+            <TextView
+                android:id="@+id/tbltxtpressureval"
+                android:text="100.9
+kPa"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2" />
+
+            <TextView
+                android:id="@+id/tbltxtceilingval"
+                android:text="2700
+m"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3" />
+
+            <TextView
+                android:id="@+id/tbltxtsunsetval"
+                android:text="6:23
+PM"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="4" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="406dp">
+
+        <ImageView
+            android:id="@+id/imgmoredetails"
+            android:layout_width="197dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/moredetailspng"
+            tools:layout_editor_absoluteX="-3dp"
+            tools:layout_editor_absoluteY="399dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="193dp"
+            android:layout_height="70dp"
+            android:background="@drawable/gradientnavcolor"
+            android:text="Weather News"
+            android:gravity="center"
+            android:textColor="#FFFFE0"
+            tools:layout_editor_absoluteX="191dp"
+            tools:layout_editor_absoluteY="407dp" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
